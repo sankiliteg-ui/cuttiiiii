@@ -3,34 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>for my Boss 💖</title>
+  <title>for my Boss 💖 — Autoplay on Laptop & Android</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root{
-      --brand: #ff6fb5;
-      --brand-2: #8b5cf6;
-    }
-    html,body{scroll-behavior:smooth}
-    .glass{backdrop-filter: blur(10px); background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25)}
-    .shine{background: linear-gradient(120deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent}
-    .float{animation: float 6s ease-in-out infinite}
-    @keyframes float{0%,100%{transform: translateY(0)}50%{transform: translateY(-10px)}}
-    .pulse-soft{animation:pulse-soft 2.2s ease-in-out infinite}
-    @keyframes pulse-soft{0%{box-shadow:0 0 0 0 rgba(255,111,181,.5)}70%{box-shadow:0 0 0 20px rgba(255,111,181,0)}100%{box-shadow:0 0 0 0 rgba(255,111,181,0)}}
-    /* Floating hearts */
-    .heart{position: absolute; font-size: 18px; animation: rise 12s linear infinite; opacity:.75}
-    @keyframes rise{0%{transform:translateY(0) translateX(0); opacity:.2} 100%{transform:translateY(-120vh) translateX(20px); opacity:1}}
-    /* Simple modal */
-    dialog::backdrop{background:rgba(0,0,0,.6)}
-    dialog{border:none; border-radius:1rem; padding:0; overflow:hidden}
-
-    :root{
-      --brand: #ff6fb5;
-      --brand-2: #8b5cf6;
-    }
+    :root{ --brand:#ff6fb5; --brand-2:#8b5cf6; }
     html,body{scroll-behavior:smooth}
     .glass{backdrop-filter: blur(10px); background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25)}
     .shine{background: linear-gradient(120deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent}
@@ -43,40 +22,25 @@
     dialog::backdrop{background:rgba(0,0,0,.6)}
     dialog{border:none; border-radius:1rem; padding:0; overflow:hidden}
 
-    
     /* 📱 ANDROID / MOBILE RESPONSIVE FIX */
     @media (max-width: 480px) {
-      h1 {
-        font-size: 2rem !important;
-        line-height: 2.5rem !important;
-      }
-      p, .text-lg, .text-slate-600 {
-        font-size: 0.95rem !important;
-      }
-      .rounded-2xl, .glass {
-        border-radius: 1rem !important;
-      }
-      .p-6, .p-8 {
-        padding: 1.2rem !important;
-      }
-      img {
-        height: 210px !important;
-        object-fit: cover !important;
-      }
-      nav .px-4, section .px-4 {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-      }
-      button, a {
-        padding: 0.55rem 1.25rem !important;
-        font-size: 0.9rem !important;
-      }
+      h1 { font-size: 2rem !important; line-height: 2.5rem !important; }
+      p, .text-lg, .text-slate-600 { font-size: 0.95rem !important; }
+      .rounded-2xl, .glass { border-radius: 1rem !important; }
+      .p-6, .p-8 { padding: 1.2rem !important; }
+      img { height: 210px !important; object-fit: cover !important; }
+      nav .px-4, section .px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
+      button, a { padding: 0.55rem 1.25rem !important; font-size: 0.9rem !important; }
     }
   </style>
 </head>
 <body class="bg-gradient-to-br from-pink-50 via-rose-50 to-violet-50 text-slate-800 [font-family:'Poppins',sans-serif]">
-  <!-- 🔊 BACKGROUND MUSIC (no controls, auto/loop). Put your file at the same path and rename below. -->
-  <audio id="bgm" src="aa.mp3" preload="auto" loop playsinline></audio>
+  <!-- 🔊 BACKGROUND MUSIC (works on laptop + Android) -->
+  <!-- Strategy:
+       1) First, try audible autoplay (unmuted). If allowed (laptop/desktop policies), it plays with sound.
+       2) If blocked, immediately fall back to muted autoplay, then unmute + fade on first gesture (Android-safe).
+  -->
+  <audio id="bgm" src="aa.mp3" preload="auto" loop autoplay muted playsinline></audio>
 
   <!-- Floating hearts layer -->
   <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10">
@@ -111,19 +75,11 @@
           Hey HEROINE, <span class="shine">you’re my favourite chashmish</span> 💫
         </h1>
         <p class="mt-4 text-slate-600 text-lg">
-
-           1. Chashma heroine 👓
-                                  Beautiful, but not show-off 💗<BR>
-
-2.Dil saaf, nazar clear (chashma ke baad) 🤓<br>
-
-3.Pyaar karti hoon, par bewakoof nahi 😌<br>
-4.Thodi si funny 🤭<br>
-5.Innocent face 🤍
-
-
-
-
+           1. Chashma heroine 👓 Beautiful, but not show-off 💗<br>
+           2. Dil saaf, nazar clear (chashma ke baad) 🤓<br>
+           3. Pyaar karti hoon, par bewakoof nahi 😌<br>
+           4. Thodi si funny 🤭<br>
+           5. Innocent face 🤍
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#why" class="rounded-full px-5 py-3 font-semibold text-white pulse-soft" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Start Here ➜</a>
@@ -157,9 +113,7 @@
         <div class="glass rounded-2xl p-6">
           <div class="text-3xl">🫶</div>
           <h3 class="mt-3 font-semibold text-lg">Golden Heart</h3>
-          <p class="text-slate-600">Dil ab bhi saaf hai mera…
-Bas logon ko wahan se hata diya jaha wo kabil nahi the.
-Pyaar mehenga ho gaya hai, aur bewakoofi ka stock khatam h.</p>
+          <p class="text-slate-600">Dil ab bhi saaf hai mera… Bas logon ko wahan se hata diya jaha wo kabil nahi the. Pyaar mehenga ho gaya hai, aur bewakoofi ka stock khatam h.</p>
         </div>
       </div>
     </div>
@@ -171,21 +125,15 @@ Pyaar mehenga ho gaya hai, aur bewakoofi ka stock khatam h.</p>
     <div class="mt-8 grid md:grid-cols-3 gap-6">
       <div class="rounded-2xl p-6 bg-gradient-to-br from-rose-100 to-fuchsia-100 border border-rose-200">
         <h3 class="font-semibold">Inside Jokes 🤫</h3>
-        <p class="text-slate-700 mt-2">Annu jab chashma utaarti hai na…
-Duniya blur ho jaati hai
-Aur jab pehenti hai…
-Hum blur ho jaate hain</p>
+        <p class="text-slate-700 mt-2">Annu jab chashma utaarti hai na… Duniya blur ho jaati hai. Aur jab pehenti hai… Hum blur ho jaate hain.</p>
       </div>
       <div class="rounded-2xl p-6 bg-gradient-to-br from-violet-100 to-indigo-100 border border-violet-200">
         <h3 class="font-semibold">Mini Attitue 🗺️</h3>
-        <p class="text-slate-700 mt-2">Annu ka chashma =
-Nazar ke saath saath attitude bhi set kar deta.</p>
+        <p class="text-slate-700 mt-2">Annu ka chashma = Nazar ke saath saath attitude bhi set kar deta.</p>
       </div>
       <div class="rounded-2xl p-6 bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200">
         <h3 class="font-semibold">GUNDE</h3>
-        <p class="text-slate-700 mt-2">Annu jab chashma utaarti hai na,
-Room ka AC bhi confused ho jata hai:
-“Fog mode kisne on kiya</p>
+        <p class="text-slate-700 mt-2">Annu jab chashma utaarti hai na, Room ka AC bhi confused ho jata hai: “Fog mode kisne on kiya”.</p>
       </div>
     </div>
   </section>
@@ -194,15 +142,7 @@ Room ka AC bhi confused ho jata hai:
   <section id="note" class="bg-white/50 border-y border-white/70">
     <div class="mx-auto max-w-4xl px-4 py-16 text-center">
       <h2 class="text-3xl md:text-4xl font-bold shine">A small note for you</h2>
-      <p class="mt-4 text-lg text-slate-700">
-        Annu 👓
-Sundar aankhon wali, dil se pyaari.
-Chashma sirf style nahi — uski identity hai.
-Innocent smile, golden heart, aur pure vibes.
-Soft nature, strong values.
-Jo milti hai pyaar se, par respect sabse pehle.
-Rare type ki ladki — classy, caring, one of a kind." 
-      </p>
+      <p class="mt-4 text-lg text-slate-700">Annu 👓 Sundar aankhon wali, dil se pyaari. Chashma sirf style nahi — uski identity hai. Innocent smile, golden heart, aur pure vibes. Soft nature, strong values. Jo milti hai pyaar se, par respect sabse pehle. Rare type ki ladki — classy, caring, one of a kind.</p>
       <div class="mt-6 flex justify-center gap-3">
         <a href="#gallery" class="rounded-full px-5 py-3 font-semibold text-white" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Scroll to Gallery</a>
         <button id="btn-letter" class="rounded-full px-5 py-3 font-semibold border border-fuchsia-300 hover:bg-white/70">Open Handwritten Letter ✉️</button>
@@ -248,8 +188,6 @@ Rare type ki ladki — classy, caring, one of a kind."
     <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-600">
       <p>Made witH BY TUGGU</p>
       <div class="flex items-center gap-4">
-        <!-- Optional social link -->
-        <!-- <a class="hover:text-fuchsia-600" href="https://instagram.com/your_id" target="_blank" rel="noreferrer">Instagram</a> -->
         <a href="#home" class="hover:text-fuchsia-600">Back to top ↑</a>
       </div>
     </div>
@@ -263,14 +201,11 @@ Rare type ki ladki — classy, caring, one of a kind."
         <button class="text-slate-500 hover:text-slate-800" onclick="dlg.close()">✖</button>
       </div>
       <ul id="compliments" class="list-disc pl-5 space-y-2 text-slate-700">
-        <li>Your smile has main-character energy .</li>
-        <li> ANNU 🌙 Pretty Eyes, Pure Soul
-</li>
-        <li> Annu ✨ Rare, Real & Really Sweet</li>
-        <li> Annu 💗 Soft Heart, Strong Vibes
-</li>
-        <li> ANNU 💅 Pyaari But Not Available for Everyone
-</li>
+        <li>Your smile has main-character energy.</li>
+        <li>ANNU 🌙 Pretty Eyes, Pure Soul</li>
+        <li>Annu ✨ Rare, Real & Really Sweet</li>
+        <li>Annu 💗 Soft Heart, Strong Vibes</li>
+        <li>ANNU 💅 Pyaari But Not Available for Everyone</li>
       </ul>
       <div class="mt-4 flex gap-2">
         <input id="newC" placeholder="Add your own compliment…" class="flex-1 rounded-xl border px-3 py-2"/>
@@ -286,27 +221,12 @@ Rare type ki ladki — classy, caring, one of a kind."
         <h3 class="text-xl font-bold">A Letter From Me</h3>
         <button class="text-slate-500 hover:text-slate-800" onclick="letter.close()">✖</button>
       </div>
-      <p class="text-slate-700 leading-relaxed">
-        
-        1. 🌸 Cute
-
-
-2. Cute voice 
-
-
-3. 😎 Attitude
-
-
-4. ✨ Royal
-
-
-5. 🧿 Innocent + Lovely
-      </p>
+      <p class="text-slate-700 leading-relaxed">1. 🌸 Cute<br>2. Cute voice<br>3. 😎 Attitude<br>4. ✨ Royal<br>5. 🧿 Innocent + Lovely</p>
     </div>
   </dialog>
 
   <script>
-    // ----- Existing UI JS -----
+    // ----- UI JS -----
     const dlg = document.getElementById('dlg');
     const letter = document.getElementById('letter');
     const btnC = document.getElementById('btn-compliments');
@@ -332,54 +252,49 @@ Rare type ki ladki — classy, caring, one of a kind."
       sText.classList.remove('hidden');
     });
 
-    // ----- Background Music Autoplay (no buttons) -----
-    // Works across modern browsers by attempting autoplay on load.
-    // If blocked, it will start on the user's first interaction (tap/click/scroll/keypress)
+    // ----- Background Music: Laptop + Android Autoplay -----
     const bgm = document.getElementById('bgm');
+    const TARGET_VOL = 0.55; // comfortable level
 
-    function tryPlay() {
-      if (!bgm) return;
-      // Set a comfortable volume; keep unmuted for a natural start.
-      bgm.volume = 0.5;
-      bgm.muted = false;
-      const p = bgm.play();
-      if (p && typeof p.then === 'function') {
-        p.catch(() => {
-          // Autoplay likely blocked. We'll wait for the first gesture.
-          armGestureStart();
-        });
+    async function attemptAudibleAutoplay(){
+      try{
+        bgm.muted = false; // try with sound first (works on laptop if site is eligible)
+        await bgm.play();
+        bgm.volume = TARGET_VOL;
+        return true;
+      }catch(err){
+        return false;
       }
     }
 
-    let armed = false;
-    function startOnGesture() {
-      if (!bgm) return;
-      bgm.muted = false;
-      bgm.volume = 0.5;
-      bgm.play().catch(() => {});
-      disarmGestureStart();
-    }
-    function armGestureStart() {
-      if (armed) return;
-      armed = true;
-      ['click','touchstart','keydown','scroll'].forEach(evt => document.addEventListener(evt, startOnGesture, { once: true, passive: true }));
-    }
-    function disarmGestureStart() {
-      ['click','touchstart','keydown','scroll'].forEach(evt => document.removeEventListener(evt, startOnGesture, { once: true }));
-      armed = false;
+    function armGestureUnmute(){
+      const opts = { once:true, passive:true };
+      const unmute = () => {
+        // if paused for some reason, start it
+        bgm.play().catch(()=>{});
+        bgm.muted = false;
+        bgm.volume = TARGET_VOL;
+      };
+      ['click','touchstart','keydown','scroll'].forEach(ev=>document.addEventListener(ev, unmute, opts));
     }
 
-    // Resume if user switches tabs
-    document.addEventListener('visibilitychange', () => {
-      if (!document.hidden) {
-        if (bgm && bgm.paused) {
-          bgm.play().catch(() => {});
-        }
+    async function initAudio(){
+      // If audible autoplay fails, ensure it's at least playing muted, then unmute on first gesture
+      const ok = await attemptAudibleAutoplay();
+      if (!ok){
+        try{ await bgm.play(); }catch(e){}
+        bgm.muted = true; // keep policies happy until user gesture
+        bgm.volume = TARGET_VOL;
+        armGestureUnmute();
       }
+    }
+
+    // If user switches away/back, keep music going
+    document.addEventListener('visibilitychange', ()=>{
+      if (!document.hidden && bgm.paused){ bgm.play().catch(()=>{}); }
     });
 
-    // Kick things off ASAP
-    window.addEventListener('load', tryPlay);
+    window.addEventListener('load', initAudio);
   </script>
 </body>
 </html>
