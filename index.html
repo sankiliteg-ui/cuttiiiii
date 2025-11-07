@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>for my Boss 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand: #ff6fb5;
+      --brand-2: #8b5cf6;
+    }
+    html,body{scroll-behavior:smooth}
+    .glass{backdrop-filter: blur(10px); background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25)}
+    .shine{background: linear-gradient(120deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent}
+    .float{animation: float 6s ease-in-out infinite}
+    @keyframes float{0%,100%{transform: translateY(0)}50%{transform: translateY(-10px)}}
+    .pulse-soft{animation:pulse-soft 2.2s ease-in-out infinite}
+    @keyframes pulse-soft{0%{box-shadow:0 0 0 0 rgba(255,111,181,.5)}70%{box-shadow:0 0 0 20px rgba(255,111,181,0)}100%{box-shadow:0 0 0 0 rgba(255,111,181,0)}}
+    /* Floating hearts */
+    .heart{position: absolute; font-size: 18px; animation: rise 12s linear infinite; opacity:.75}
+    @keyframes rise{0%{transform:translateY(0) translateX(0); opacity:.2} 100%{transform:translateY(-120vh) translateX(20px); opacity:1}}
+    /* Simple modal */
+    dialog::backdrop{background:rgba(0,0,0,.6)}
+    dialog{border:none; border-radius:1rem; padding:0; overflow:hidden}
+
+    :root{
+      --brand: #ff6fb5;
+      --brand-2: #8b5cf6;
+    }
+    html,body{scroll-behavior:smooth}
+    .glass{backdrop-filter: blur(10px); background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25)}
+    .shine{background: linear-gradient(120deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent}
+    .float{animation: float 6s ease-in-out infinite}
+    @keyframes float{0%,100%{transform: translateY(0)}50%{transform: translateY(-10px)}}
+    .pulse-soft{animation:pulse-soft 2.2s ease-in-out infinite}
+    @keyframes pulse-soft{0%{box-shadow:0 0 0 0 rgba(255,111,181,.5)}70%{box-shadow:0 0 0 20px rgba(255,111,181,0)}100%{box-shadow:0 0 0 0 rgba(255,111,181,0)}}
+    .heart{position: absolute; font-size: 18px; animation: rise 12s linear infinite; opacity:.75}
+    @keyframes rise{0%{transform:translateY(0) translateX(0); opacity:.2} 100%{transform:translateY(-120vh) translateX(20px); opacity:1}}
+    dialog::backdrop{background:rgba(0,0,0,.6)}
+    dialog{border:none; border-radius:1rem; padding:0; overflow:hidden}
+
+    
+    /* 📱 ANDROID / MOBILE RESPONSIVE FIX */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+      }
+      p, .text-lg, .text-slate-600 {
+        font-size: 0.95rem !important;
+      }
+      .rounded-2xl, .glass {
+        border-radius: 1rem !important;
+      }
+      .p-6, .p-8 {
+        padding: 1.2rem !important;
+      }
+      img {
+        height: 210px !important;
+        object-fit: cover !important;
+      }
+      nav .px-4, section .px-4 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      button, a {
+        padding: 0.55rem 1.25rem !important;
+        font-size: 0.9rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-rose-50 to-violet-50 text-slate-800 [font-family:'Poppins',sans-serif]">
+  <!-- 🔊 BACKGROUND MUSIC (no controls, auto/loop). Put your file at the same path and rename below. -->
+  <audio id="bgm" src="aa.mp3" preload="auto" loop playsinline></audio>
+
+  <!-- Floating hearts layer -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10">
+    <div class="heart left-[10%] bottom-[-10%]">💖</div>
+    <div class="heart left-[30%] bottom-[-15%]" style="animation-delay:2s">💗</div>
+    <div class="heart left-[50%] bottom-[-12%]" style="animation-delay:4s">💞</div>
+    <div class="heart left-[70%] bottom-[-18%]" style="animation-delay:1s">💓</div>
+    <div class="heart left-[85%] bottom-[-20%]" style="animation-delay:3s">💘</div>
+  </div>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-20">
+    <nav class="mx-auto max-w-6xl px-4 py-3">
+      <div class="glass rounded-2xl px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="text-lg font-bold shine">for my GUNDE</a>
+        <div class="hidden sm:flex gap-4 text-sm font-semibold">
+          <a class="hover:text-fuchsia-600" href="#why">Why You</a>
+          <a class="hover:text-fuchsia-600" href="#memories">Memories</a>
+          <a class="hover:text-fuchsia-600" href="#note">Note</a>
+          <a class="hover:text-fuchsia-600" href="#gallery">Gallery</a>
+        </div>
+        <a href="#surprise" class="px-4 py-2 rounded-full text-white font-semibold" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Open Surprise ✨</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="mx-auto max-w-6xl px-4 pt-12 pb-20">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+          Hey HEROINE, <span class="shine">you’re my favourite chashmish</span> 💫
+        </h1>
+        <p class="mt-4 text-slate-600 text-lg">
+
+           1. Chashma heroine 👓
+                                  Beautiful, but not show-off 💗<BR>
+
+2.Dil saaf, nazar clear (chashma ke baad) 🤓<br>
+
+3.Pyaar karti hoon, par bewakoof nahi 😌<br>
+4.Thodi si funny 🤭<br>
+5.Innocent face 🤍
+
+
+
+
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#why" class="rounded-full px-5 py-3 font-semibold text-white pulse-soft" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Start Here ➜</a>
+          <button id="btn-compliments" class="rounded-full px-5 py-3 font-semibold border border-fuchsia-300 hover:bg-white/70">Compliments Jar 🫶</button>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="glass rounded-3xl p-3">
+          <img alt="Bestie photo placeholder" src="t1.jpg" class="rounded-2xl w-full h-72 object-cover float"/>
+        </div>
+        <p class="text-center mt-3 text-sm text-slate-500">Golden Heart $ Innocent Face - Dangerous Mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY YOU -->
+  <section id="why" class="bg-white/50 border-y border-white/70">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold shine">Why you’re special to me</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6">
+          <div class="text-3xl">🌞</div>
+          <h3 class="mt-3 font-semibold text-lg">Sunshine Energy</h3>
+          <p class="text-slate-600">Your vibe brightens even my laziest days. One text from you and—boom—mood fixed.</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <div class="text-3xl">🧠</div>
+          <h3 class="mt-3 font-semibold text-lg">Smart + Silly</h3>
+          <p class="text-slate-600">Main bura toh nahi hoon… bas ab pyaar aur bewakoofi free mein nahi baantta.</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <div class="text-3xl">🫶</div>
+          <h3 class="mt-3 font-semibold text-lg">Golden Heart</h3>
+          <p class="text-slate-600">Dil ab bhi saaf hai mera…
+Bas logon ko wahan se hata diya jaha wo kabil nahi the.
+Pyaar mehenga ho gaya hai, aur bewakoofi ka stock khatam h.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMORIES -->
+  <section id="memories" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold">Little memories, big smiles</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl p-6 bg-gradient-to-br from-rose-100 to-fuchsia-100 border border-rose-200">
+        <h3 class="font-semibold">Inside Jokes 🤫</h3>
+        <p class="text-slate-700 mt-2">Annu jab chashma utaarti hai na…
+Duniya blur ho jaati hai
+Aur jab pehenti hai…
+Hum blur ho jaate hain</p>
+      </div>
+      <div class="rounded-2xl p-6 bg-gradient-to-br from-violet-100 to-indigo-100 border border-violet-200">
+        <h3 class="font-semibold">Mini Attitue 🗺️</h3>
+        <p class="text-slate-700 mt-2">Annu ka chashma =
+Nazar ke saath saath attitude bhi set kar deta.</p>
+      </div>
+      <div class="rounded-2xl p-6 bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200">
+        <h3 class="font-semibold">GUNDE</h3>
+        <p class="text-slate-700 mt-2">Annu jab chashma utaarti hai na,
+Room ka AC bhi confused ho jata hai:
+“Fog mode kisne on kiya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTE / PROMISE -->
+  <section id="note" class="bg-white/50 border-y border-white/70">
+    <div class="mx-auto max-w-4xl px-4 py-16 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold shine">A small note for you</h2>
+      <p class="mt-4 text-lg text-slate-700">
+        Annu 👓
+Sundar aankhon wali, dil se pyaari.
+Chashma sirf style nahi — uski identity hai.
+Innocent smile, golden heart, aur pure vibes.
+Soft nature, strong values.
+Jo milti hai pyaar se, par respect sabse pehle.
+Rare type ki ladki — classy, caring, one of a kind." 
+      </p>
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="#gallery" class="rounded-full px-5 py-3 font-semibold text-white" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Scroll to Gallery</a>
+        <button id="btn-letter" class="rounded-full px-5 py-3 font-semibold border border-fuchsia-300 hover:bg-white/70">Open Handwritten Letter ✉️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY (Placeholders) -->
+  <section id="gallery" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold">Memory Board</h2>
+    <p class="text-slate-600 mt-2">Drop your favourite pics here later. For now, enjoy these placeholders 💕</p>
+    <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img class="rounded-2xl h-48 w-full object-cover" src="t2.jpg" alt="Memory 1"/>
+      <img class="rounded-2xl h-48 w-full object-cover" src="t3.jpg" alt="Memory 2"/>
+      <img class="rounded-2xl h-48 w-full object-cover" src="t4.jpg" alt="Memory 3"/>
+      <img class="rounded-2xl h-48 w-full object-cover" src="t1.jpg" alt="Memory 4"/>
+      <img class="rounded-2xl h-48 w-full object-cover" src="t6.jpg" alt="Memory 5"/>
+      <img class="rounded-2xl h-48 w-full object-cover" src="t7.jpg" alt="Memory 6"/>
+    </div>
+  </section>
+
+  <!-- QUOTES / WHAT PEOPLE SAY -->
+  <section class="bg-white/50">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold shine">What I say about you (and always will)</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <blockquote class="glass rounded-2xl p-6">“Kind soul. Sharp mind. Pure chaos in the best ways.”</blockquote>
+        <blockquote class="glass rounded-2xl p-6">“If loyalty had a face, it’d be yours. Period.”</blockquote>
+        <blockquote class="glass rounded-2xl p-6">“My safe place. My favourite laugh. My home outside home.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / SURPRISE -->
+  <section id="surprise" class="mx-auto max-w-5xl px-4 py-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold">Tiny Surprise Box 🎁</h2>
+    <p class="text-slate-600 mt-2">Click to open and collect your smile for the day.</p>
+    <button id="btn-surprise" class="mt-6 rounded-2xl px-6 py-4 text-lg font-bold text-white hover:scale-[1.02] transition" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Open 💌</button>
+    <p id="surprise-text" class="mt-6 text-xl hidden">You are 1 in a million. Correction: you are <span class="font-bold shine">my</span> 1 in a million. 🫶</p>
+  </section>
+
+  <footer class="border-t border-white/70">
+    <div class="mx-auto max-w-6xl px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+      <p>Made witH BY TUGGU</p>
+      <div class="flex items-center gap-4">
+        <!-- Optional social link -->
+        <!-- <a class="hover:text-fuchsia-600" href="https://instagram.com/your_id" target="_blank" rel="noreferrer">Instagram</a> -->
+        <a href="#home" class="hover:text-fuchsia-600">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compliments Modal -->
+  <dialog id="dlg">
+    <div class="bg-white p-6 md:p-8 w-[min(92vw,560px)]">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-xl font-bold">Compliments Jar 🫙</h3>
+        <button class="text-slate-500 hover:text-slate-800" onclick="dlg.close()">✖</button>
+      </div>
+      <ul id="compliments" class="list-disc pl-5 space-y-2 text-slate-700">
+        <li>Your smile has main-character energy .</li>
+        <li> ANNU 🌙 Pretty Eyes, Pure Soul
+</li>
+        <li> Annu ✨ Rare, Real & Really Sweet</li>
+        <li> Annu 💗 Soft Heart, Strong Vibes
+</li>
+        <li> ANNU 💅 Pyaari But Not Available for Everyone
+</li>
+      </ul>
+      <div class="mt-4 flex gap-2">
+        <input id="newC" placeholder="Add your own compliment…" class="flex-1 rounded-xl border px-3 py-2"/>
+        <button id="addC" class="rounded-xl px-4 py-2 text-white" style="background:linear-gradient(120deg,var(--brand),var(--brand-2))">Add</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Letter Modal -->
+  <dialog id="letter">
+    <div class="bg-white p-6 md:p-8 w-[min(92vw,560px)]">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-xl font-bold">A Letter From Me</h3>
+        <button class="text-slate-500 hover:text-slate-800" onclick="letter.close()">✖</button>
+      </div>
+      <p class="text-slate-700 leading-relaxed">
+        
+        1. 🌸 Cute
+
+
+2. Cute voice 
+
+
+3. 😎 Attitude
+
+
+4. ✨ Royal
+
+
+5. 🧿 Innocent + Lovely
+      </p>
+    </div>
+  </dialog>
+
+  <script>
+    // ----- Existing UI JS -----
+    const dlg = document.getElementById('dlg');
+    const letter = document.getElementById('letter');
+    const btnC = document.getElementById('btn-compliments');
+    const btnL = document.getElementById('btn-letter');
+    const btnS = document.getElementById('btn-surprise');
+    const sText = document.getElementById('surprise-text');
+
+    btnC.addEventListener('click', () => dlg.showModal());
+    btnL?.addEventListener('click', () => letter.showModal());
+
+    document.getElementById('addC').addEventListener('click', () => {
+      const input = document.getElementById('newC');
+      const value = input.value.trim();
+      if(!value) return;
+      const li = document.createElement('li');
+      li.textContent = value;
+      document.getElementById('compliments').appendChild(li);
+      input.value = '';
+    });
+
+    btnS.addEventListener('click', () => {
+      btnS.textContent = 'Opened ✓';
+      sText.classList.remove('hidden');
+    });
+
+    // ----- Background Music Autoplay (no buttons) -----
+    // Works across modern browsers by attempting autoplay on load.
+    // If blocked, it will start on the user's first interaction (tap/click/scroll/keypress)
+    const bgm = document.getElementById('bgm');
+
+    function tryPlay() {
+      if (!bgm) return;
+      // Set a comfortable volume; keep unmuted for a natural start.
+      bgm.volume = 0.5;
+      bgm.muted = false;
+      const p = bgm.play();
+      if (p && typeof p.then === 'function') {
+        p.catch(() => {
+          // Autoplay likely blocked. We'll wait for the first gesture.
+          armGestureStart();
+        });
+      }
+    }
+
+    let armed = false;
+    function startOnGesture() {
+      if (!bgm) return;
+      bgm.muted = false;
+      bgm.volume = 0.5;
+      bgm.play().catch(() => {});
+      disarmGestureStart();
+    }
+    function armGestureStart() {
+      if (armed) return;
+      armed = true;
+      ['click','touchstart','keydown','scroll'].forEach(evt => document.addEventListener(evt, startOnGesture, { once: true, passive: true }));
+    }
+    function disarmGestureStart() {
+      ['click','touchstart','keydown','scroll'].forEach(evt => document.removeEventListener(evt, startOnGesture, { once: true }));
+      armed = false;
+    }
+
+    // Resume if user switches tabs
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        if (bgm && bgm.paused) {
+          bgm.play().catch(() => {});
+        }
+      }
+    });
+
+    // Kick things off ASAP
+    window.addEventListener('load', tryPlay);
+  </script>
+</body>
+</html>
